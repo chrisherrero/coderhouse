@@ -2,3 +2,47 @@ console.log("el script funciona bien papu");
 
 const titulo = document.getElementById("titulo");
 titulo.textContent = "titulo modificado desde el script.js";
+
+const numero = 24;
+string = "casita";
+Boolean = true
+
+if (Boolean) {
+    console.log("es verdadero");
+}
+console.log("numero: ", numero);
+console.log("string: ", string);
+ 
+let calificacion = 30;
+
+if (calificacion >= 90) {
+    console.log("Excelente");
+} else if (calificacion >= 70) {
+    console.log("Bueno");
+} else {
+    console.log("Necesitas estudiar más");
+}
+
+let edad = 15;
+let acceso = (edad >= 18) && (edad <= 30);
+console.log(acceso); // true si la edad está entre 18 y 30
+
+for (let i = 0; i <= 5; i++) {
+    console.log('Número: ' + i);
+}
+
+//for suele hacerse todo junto, while se suele hacer en varias líneas
+
+let i= 0;
+while (i <= 5) {
+    console.log('Número: ' + i);
+    i++;
+}
+
+//do while asegura que el ciclo se cumpla al menos una vez
+
+let j = 0;
+do {
+    console.log('Número: ' + j);
+    j++;
+}while (j <= 5);
