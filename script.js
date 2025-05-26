@@ -46,3 +46,42 @@ do {
     console.log('Número: ' + j);
     j++;
 }while (j <= 5);
+
+
+let edad2 = 20 ;
+
+if (edad2 >= 18) {
+  console.log("Eres mayor de edad");
+} else {
+  console.log("Eres menor de edad");
+}
+
+let edad3 = null;
+let nombre = "Carlos";
+
+if (edad3 !== null && edad3 !== undefined) {
+  console.log(`Tienes ${edad3} años`);
+} else {
+  if (nombre) {
+    console.log(`Bienvenido, ${nombre}`);
+  } else {
+    console.log("Información incompleta");
+  }
+}
+
+//en este caso no hay edad por lo que pasa a definir el nombre en el log
+
+let valor1 = 0;
+let resultadoOR = valor1 || "Valor predeterminado";
+
+console.log(resultadoOR); // "Valor predeterminado"
+
+//este valor regresa el valor1 solo si no es nulo o 0, sino hace el segundo
+
+let valor2 = 0;
+let resultadoNullish = valor2 ?? "Valor predeterminado";
+
+console.log(resultadoNullish); // 0
+
+//este regresa el valor aun si es 0 o null
+
