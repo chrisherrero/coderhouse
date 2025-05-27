@@ -1,7 +1,7 @@
 console.log("el script funciona bien papu");
 
-const titulo = document.getElementById("titulo");
-titulo.textContent = "titulo modificado desde el script.js";
+let titulo = document.getElementById("titulo");
+titulo.textContent = "ahora se tiene que hacer algo mas";
 
 const numero = 24;
 string = "casita";
@@ -78,10 +78,27 @@ console.log(resultadoOR); // "Valor predeterminado"
 
 //este valor regresa el valor1 solo si no es nulo o 0, sino hace el segundo
 
-let valor2 = 0;
+let valor2 = null;
 let resultadoNullish = valor2 ?? "Valor predeterminado";
 
 console.log(resultadoNullish); // 0
 
-//este regresa el valor aun si es 0 o null
+//este regresa el valor aun si es 0 , solo lleva al segundo si es nulo o undefined
 
+let nomvre = prompt("¿Cuál es tu nombre?").toLowerCase(); 
+
+switch (nomvre) {
+    case "carlos":
+        alert("Hola Carlos, bienvenido");
+        break;
+    case "maria":
+        alert("Hola Maria, bienvenido");
+        break;
+    case "juan":
+        alert("Hola Juan, bienvenido");
+        break;
+    default:
+        alert("Nombre no reconocido");
+}
+
+//ciclo witch con un mensaje, a traves del prompt. el alert lleva una ventana de aviso
