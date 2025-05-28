@@ -84,7 +84,7 @@ let resultadoNullish = valor2 ?? "Valor predeterminado";
 console.log(resultadoNullish); // 0
 
 //este regresa el valor aun si es 0 , solo lleva al segundo si es nulo o undefined
-
+/*
 let nomvre = prompt("¿Cuál es tu nombre?").toLowerCase(); 
 
 switch (nomvre) {
@@ -99,6 +99,14 @@ switch (nomvre) {
         break;
     default:
         alert("Nombre no reconocido");
-}
-
+} 
+*/
 //ciclo witch con un mensaje, a traves del prompt. el alert lleva una ventana de aviso
+
+let quiere = confirm("¿queres un caramelo?");
+contador = 0;
+if (quiere) {
+  contador++
+    alert("¡Aquí tienes un caramelo!, caramelos actuales: " + contador);
+    confirm ("¿Quieres otro caramelo?");
+}
