@@ -1,7 +1,7 @@
 console.log("el script funciona bien papu");
-
+/*
 let titulo = document.getElementById("titulo");
-titulo.textContent = "ahora se tiene que hacer algo mas";
+titulo.textContent = "ahora se tiene que hacer algo mas";*/
 
 const numero = 24;
 string = "casita";
@@ -12,7 +12,7 @@ if (Boolean) {
 }
 console.log("numero: ", numero);
 console.log("string: ", string);
- 
+
 let calificacion = 30;
 
 if (calificacion >= 90) {
@@ -107,7 +107,8 @@ let quiere = confirm("¿queres un caramelo?");
 contador = 0;
 while (quiere) {
     contador++;
-    alert("¡Aquí tienes un caramelo!, caramelos actuales: " + contador);
+    alert("¡Aca tienes un caramelo!");
+    alert("caramelos actuales: " + contador);
     quiere = confirm("¿Querés otro caramelo?");
 } 
     alert("oki chau");
