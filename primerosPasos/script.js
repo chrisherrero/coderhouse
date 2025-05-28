@@ -105,8 +105,10 @@ switch (nomvre) {
 
 let quiere = confirm("¿queres un caramelo?");
 contador = 0;
-if (quiere) {
-  contador++
+while (quiere) {
+    contador++;
     alert("¡Aquí tienes un caramelo!, caramelos actuales: " + contador);
-    confirm ("¿Quieres otro caramelo?");
-}
+    quiere = confirm("¿Querés otro caramelo?");
+} 
+    alert("oki chau");
+
