@@ -105,7 +105,7 @@ switch (nomvre) {
 //ciclo witch con un mensaje, a traves del prompt. el alert lleva una ventana de aviso
 
 */
-let quiere = confirm("¿queres un caramelo?");
+/*let quiere = confirm("¿queres un caramelo?");
 contador = 0;
 while (quiere) {
     contador++;
@@ -114,4 +114,93 @@ while (quiere) {
     quiere = confirm("¿Querés otro caramelo?");
 } 
     alert("oki chau");
+*/
+/*
+function saludar (){
+    let nombre = prompt("¿Cuál es tu nombre?");
+    if (nombre) {
+        alert("Hola " + nombre + ", bienvenido");
+    } else {
+        alert("Hola, bienvenido anónimo");
+    }
+}
+
+console.log(saludar());
+
+
+function saludar(nombre) {
+    console.log(`Hola, ${nombre}`);
+}
+
+saludar ("Carlos"); 
+saludar ("Maria");
+saludar ("Juan");
+
+function calcularPrecioFinal(precio, descuento) {
+    return precio - (precio * descuento / 100);
+}
+
+// Reutilizando la función en diferentes contextos
+let precioCamisa = calcularPrecioFinal(50, 10);
+let precioPantalon = calcularPrecioFinal(80, 15);
+
+console.log(`Precio final de la camisa: ${precioCamisa}`);
+console.log(`Precio final del pantalón: ${precioPantalon}`);
+
+function calcularDescuento(precio, porcentajeDescuento) {
+    return precio - (precio * porcentajeDescuento / 100);
+}
+
+// Función para calcular el precio final incluyendo impuestos
+function calcularPrecioFinal(precio, descuento, impuesto) {
+    let precioConDescuento = calcularDescuento(precio, descuento);
+    return precioConDescuento + (precioConDescuento * impuesto / 100);
+}
+
+// Invocación
+let total = calcularPrecioFinal(100, 10, 21);
+console.log(total); // Muestra: 98.9
+
+function devolverLibro(titulo, diasRetraso = 0) {
+    const multa = diasRetraso * 0.50;
+    const mensaje = diasRetraso > 0 
+        ? `Devuelto con ${diasRetraso} días de retraso. Multa: $${multa}` //parece que esto muestra el mensaje si se cumple el retraso
+        : "Devuelto a tiempo. No hay multa."; //y este si no hay retraso
+    console.log(`Libro "${titulo}": ${mensaje}`);//mensaje de la consola
+}
+
+devolverLibro("El Principito");
+// Muestra: Libro "El Principito": Devuelto a tiempo. No hay multa.
+
+devolverLibro("El Principito", 3);
+// Muestra: Libro "El Principito": Devuelto con 3 días de retraso. Multa: $1.5.
+
+const suma = function(a, b) { // Función anónima asignada a una variable
+    return a + b;
+};
+console.log(suma(5, 3)); // Salida: 8
+
+const suma2 = (a, b) => a + b; // Función flecha
+console.log(suma(5, 3)); // Salida: 8
+
+const suma3 = a => a + 5; // Función flecha con un solo parámetro
+console.log(suma3(5)); // Salida: 10
+
+*/
+
+
+
+
+alert("¿Qué edad tendrás en 2050?");
+
+function edad(edadActual) {
+    return parseInt(edadActual) + 25;
+}
+
+let edadActual = prompt("Ingrese su edad");
+
+alert("En 2050 tendrás " + edad(edadActual) + " años");
+
+
+
 
