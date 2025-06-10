@@ -186,7 +186,6 @@ console.log(suma(5, 3)); // Salida: 8
 const suma3 = a => a + 5; // Función flecha con un solo parámetro
 console.log(suma3(5)); // Salida: 10
 
-*/
 
 
 
@@ -199,8 +198,85 @@ function edad(edadActual) {
 
 let edadActual = prompt("Ingrese su edad");
 
-alert("En 2050 tendrás " + edad(edadActual) + " años");
+alert("En 2050 tendrás " + edad(edadActual) + " años"); */
+const numeros = [10, 20, 30, 40, 50];
 
+for (let i =0; i < numeros.length; i++) 
+{
+    console.log(numeros[i]);
+}
 
+const frutas = ["Manzana", "Banana", "Cereza"];
 
+console.log(frutas[0]); // Salida: Manzana
+
+console.log(frutas[1]); // Salida: Banana
+
+console.log(frutas[frutas.length - 1]); // Salida: Cereza
+
+let nombres = ["cortazar", "Borges", "gabo", "Saramago", "dante"];
+
+numeros.sort((a, b) => a - b); // Ordena de menor a mayor
+nombres.sort((a,b) => a.localeCompare(b)); // Ordena alfabéticamente aunque sean mayusculas o minusculas
+
+console.log(nombres); // Salida: ["borges", "cortazar", "dante", "gabo", "saramago"]
+
+numeros.reverse(); // Invierte el orden del array
+console.log(numeros); // Salida: [50, 40, 30, 20, 10]
+
+let listaNombres = nombres.join(", ");
+
+console.log(listaNombres);
+ // Une los elementos del array en una cadena
+
+//IMPORTANTISIMO, ESTO LO VAS A USAR PARA EL TRABAJO FINAL
+
+let arrayObjetos = [] //array vacio
+
+arrayObjetos.push ({
+    id: 1,
+    titulo: "el principito",
+    autor: "Antoine de Saint-Exupéry",
+    cdu: "843.6",
+    genero: "ficcion",
+    paginas: 96,
+    editorial: "Editorial Salamandra",
+    presentacion: function() { //funcion dentro del objeto
+        console.log ( titulo, autor)}
+}) //agrega un objeto al array con varios datos
+
+arrayObjetos.push ({
+    id: 2,
+    titulo: "Cien años de soledad",
+    autor: "Gabriel García Márquez",
+    cdu: "863.7",
+    genero: "Realismo",
+    paginas: 417,
+    editorial: "Editorial Sudamericana",
+})
+
+arrayObjetos.push ({
+    id: 3,
+    titulo: "El túnel",
+    autor: "Ernesto Sabato",
+    cdu: "863.6",
+    genero: "ficcion",
+    paginas: 160,
+    editorial: "Editorial Seix Barral",
+})
+
+console.log(arrayObjetos); //imprime todos
+
+for(let objeto of arrayObjetos) {
+    console.log( objeto.autor);} //imprime solo los autores de cada objeto
+
+    const ordenados = arrayObjetos.sort((a, b) => a.autor.localeCompare(b.autor)); // Ordena por título alfabéticamente
+
+console.log(ordenados); // Muestra el array ordenado por autor
+
+const soloFiccion = arrayObjetos.filter(objeto => objeto.genero === "ficcion"); // Filtra por género
+console.log(soloFiccion); // Muestra solo los objetos de género "ficcion"
+
+const principito = arrayObjetos.find(objeto => objeto.titulo === "el principito"); // Busca un objeto por título
+console.log(principito); // Muestra el objeto con el título "el principito"
 
