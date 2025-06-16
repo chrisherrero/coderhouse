@@ -241,8 +241,6 @@ arrayObjetos.push ({
     genero: "ficcion",
     paginas: 96,
     editorial: "Editorial Salamandra",
-    presentacion: function() { //funcion dentro del objeto
-        console.log ( titulo, autor)}
 }) //agrega un objeto al array con varios datos
 
 arrayObjetos.push ({
