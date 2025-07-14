@@ -23,6 +23,13 @@ const libros =
     },
 ];
 
+// llamado a la funcion para agregar un libro al repositorio
+function agregarAlRepositorio(libro, repositorio) 
+{
+    repositorio.push(libro); // Agrega el libro al array
+    return repositorio; // Devuelve el array actualizado
+}
+
 libros.sort((a, b) => a.autor.localeCompare(b.autor)); // Ordena el array de libros por autor al inicio
 
 // Función para mostrar el menú principal
@@ -37,7 +44,7 @@ function mostrarMenu()
             "Ingrese: \n 1 - Buscar Libro.\n 2 - Mostrar Lista Completa de Libros.\n 3 - Agregar un Libro \n 4 - Salir"))
         if (isNaN(opcion) || opcion < 1 || opcion > 4) 
         {
-            alert("Por favor, ingrese una opción válida (1-4).");
+            alert("Por favor, ingrese una opción válida (1-4)."); // operacion no valida
             continue;
         }
 
@@ -64,7 +71,7 @@ function mostrarMenu()
 function buscarLibro() 
 {
     const criterio = parseInt(prompt("Buscar por: \n 1 - Título\n 2 - Autor\n 3 - Género\n 4 - Volver al menú principal"));
-        if (isNaN(criterio) || criterio < 1 || criterio > 4) 
+        if (isNaN(criterio) || criterio < 1 || criterio > 4) //criterio no valido
         {
             alert("Por favor, ingrese una opción válida (1-4).");
             buscarLibro(); // Vuelve a llamar a la función si la opción es inválida
@@ -126,14 +133,14 @@ function buscarLibro()
 }
 
 // Función para mostrar todos los libros
-function mostrarLibros() {
+function mostrarLibros() 
+{
     if (libros.length > 0) {
-        // libros.sort((a, b) => a.autor.localeCompare(b.autor)); // Ordena los libros por autor
         let mensaje = "Lista completa de libros:\n";
-        libros.forEach((libro, index) => {
+        libros.forEach((libro, index) => 
+            {
             mensaje += `${index + 1}. ${libro.titulo} - ${libro.autor} (${libro.genero})\n`;
-            //devuelve todos los libros del repositorio
-        });
+            });
         alert(mensaje);
     } 
     else 
@@ -166,13 +173,7 @@ function agregarLibro()
             alert("Operación cancelada.");
             return;
             }
-    /*if (titulo === null || autor === null || genero === null)
-    { 
-        alert("Operación cancelada.");
-        return; 
-    }
-en un principio quise unificar la cancelacion de la operacion pero primero me hacia pasar por cada prompt, por eso puse la cancelacion de cada uno por separado*/
-    
+
     if (titulo && autor && genero) //condicion para que se agregue el libro
     { 
         const nuevoLibro = { titulo, autor, genero };
@@ -205,11 +206,7 @@ en un principio quise unificar la cancelacion de la operacion pero primero me ha
     }
 }
 
-// llamado a la funcion para agregar un libro al repositorio
-function agregarAlRepositorio(libro, repositorio) {
-    repositorio.push(libro); // Agrega el libro al array
-    return repositorio; // Devuelve el array actualizado
-}
+
 
 
 mostrarMenu();

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio de Libros</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Repositorio de Libros</h1>
+        <p>Agregá libros al carrito de préstamo. Una vez confirmado, los libros se marcarán como prestados.</p>
+    </header>
+
+    <main>
+        <section class="usuario-section">
+            <label for="nombreUsuario">Tu nombre:</label>
+            <input type="text" id="nombreUsuario"/>
+        </section>
+
+        <section class="libros-section">
+            <h2>Libros disponibles</h2>
+            <ul id="lista-libros"></ul>
+        </section>
+
+        <section class="carrito-section">
+            <h2>Carrito de préstamo</h2>
+            <ul id="carrito"></ul>
+            <button id="finalizar">Finalizar préstamo</button>
+        </section>
+
+        <section class="mensaje-section">
+            <p id="mensajeConfirmacion"></p>
+        </section>
+    </main>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
