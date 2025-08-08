@@ -1,0 +1,13 @@
+
+[
+    { "titulo": "Nada", "autor": "Teller, Jane", "genero": "Ficcion" },
+    { "titulo": "1984", "autor": "Orwell, George", "genero": "Ciencia Ficcion" },
+    { "titulo": "El Principito", "autor": "Saint-Exupéry, Antoine de", "genero": "Literatura Infantil" },
+    { "titulo": "Rebelion en la granja", "autor": "Orwell, George", "genero": "Ficcion" },
+    { "titulo": "Mendel el de los libros", "autor": "Zweig, Stefan", "genero": "Ficcion" },
+    { "titulo": "El extranjero", "autor": "Camus, Albert", "genero": "Ficcion" },
+    { "titulo": "Fahrenheit 451", "autor": "Bradbury, Ray", "genero": "Ciencia Ficcion" },
+    { "titulo": "Crimen y castigo", "autor": "Dostoievski, Fiódor", "genero": "Ficcion" },
+    { "titulo": "El gran Gatsby", "autor": "Fitzgerald, F. Scott", "genero": "Ficcion" },
+    { "titulo": "Cien años de soledad", "autor": "García Márquez, Gabriel", "genero": "Realismo Magico" }
+]

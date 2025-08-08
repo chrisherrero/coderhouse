@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repositorio de Libros</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <header>
+    <h1>Repositorio de Libros</h1>
+    </header>
+    <main>
+    <section id="busqueda" class="busqueda-centrada">
+        <input type="text" id="buscador" placeholder="Buscar por título, autor o género...">
+    </section>
+
+    <section class="listado-libros-section">
+        <h2>Listado de Libros disponibles:</h2>
+        <ul id="lista-libros"></ul>
+    </section>
+
+
+
+    <section id="carrito-section">
+        <h2>Carrito de préstamo</h2>
+        <ul id="carrito"></ul>
+        <input type="text" id="nombreUsuario" placeholder="Tu nombre">
+            <button id="finalizar">Finalizar préstamo</button>
+        <p id="mensajeConfirmacion"></p>
+    </section>
+
+        <section id="agregar-libro">
+        <h2>Agregar nuevo libro</h2>
+        <form id="formulario-libro">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="autor" placeholder="Autor (Apellido, Nombre)" required>
+        <input type="text" id="genero" placeholder="Género" required>
+        <button type="submit">Agregar libro</button>
+        </form>
+    </section>
+    </main>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
