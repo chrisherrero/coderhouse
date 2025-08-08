@@ -37,15 +37,6 @@ El sistema permite agregar libros a un repositorio, buscarlos por título, autor
 /README.md
 ```
 
-## ✅ Requisitos del proyecto (cumplidos)
-
-- Uso de DOM y eventos ✔️
-- Fetch + JSON ✔️
-- Librería externa (SweetAlert2) ✔️
-- localStorage ✔️
-- Interfaz 100% interactiva, sin uso de consola ✔️
-- Código legible y comentado ✔️
-
 ## 🙋 Autor
 
 Christian Herrero  
